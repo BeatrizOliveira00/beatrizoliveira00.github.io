@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="estilos.css" rel="stylesheet">
+</head>
+<body>
+    
+<header id="cabecalho" class="grupo">
+    <img src="imagens/logo_empresa.png" alt="Logo da empresa">
+    <nav id="menu-principal">
+        <ul class="grupo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a class="ativo" href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="foto-principal-2"></div>
+<div id="conteudo">
+    <section id="conteudo-principal">
+
+        <h1>Contactos</h1>
+        <article>
+                Entre em contacto connosco preenchendo o formulário abaixo:
+        </article>
+
+        <br>
+
+<!--Formulário-->
+    
+    <div id="forms">
+
+        <!-- Nome -->
+        <div class="campo nome">
+          
+            <label for="cNome"> Nome </label>
+            <br>
+          
+            <input type="text" name="tNome" id="cNome" size="40" maxlength="100" required />
+        </div>
+       
+
+            <!-- Empresa -->
+        <div class="campo empresa">
+            <label for="cNome"> Empresa </label>
+            <br>
+          
+            <input type="text" name="tNome" id="cNome" size="40" maxlength="100" required />
+        </div>
+    
+        <br>
+        
+            <!-- email -->
+            <div class="email">
+            <label for="cEmail"> Email </label>
+            <br>
+      
+            
+            <input type="email" name="tEmail" id="cEmail" size="89" maxlength="100" required />
+        </div>
+        <br>
+        
+           
+                <!-- Telefone -->
+            <div class="campo telefone">
+                <label for="cTelefone"> Telefone </label>
+                <br>
+                
+                <input type="number" name="tTelefone" id="cTelefone" size="25" maxlength="30" required />
+            </div>
+            <br>
+
+            <!-- Departamento -->
+            <div class="campo">
+                <label for="cDepartamento"> Departamento </label>
+                <br>
+                
+                <input type="radio" name="tAssunto" id="cComercial" value="comercial" /> <label
+                    for="cComercial"> Comercial </label>
+                <input type="radio" name="tAssunto" id="cFinanceiro" value="financeiro" /> <label
+                    for="cFinanceiro"> Financeiro </label>
+                <input type="radio" name="tAssunto" id="cSuporte" value="suporte" /> <label for="cSuporte"> Suporte </label>
+            </div>
+        
+        <br>
+       
+            <!-- Assunto -->
+            <div class="campos">
+            <label for="cAssunto"> Assunto </label>
+            <br>
+         
+            <select id="cAssunto" required>
+                <option value=""disabled selected> -- Selecione -- </option>
+                <option value="orcamento"> Orçamento </option>
+                <option value="duvidas"> Duvidas </option>
+                <option value="solicitacoes"> Solicitações </option>
+                <option value="reclamacoes"> Reclamações </option>
+                <option value="outro"> Outro </option>
+            </select>
+        </div>
+        <br>
+       
+            <!-- Mensagem -->
+            <div>
+            <label for="cMensagem"> Mensagem </label>
+            <br>
+            <textarea name="tMensagem" id="cMensagem" size="100" rows="20" cols="72" required></textarea>
+        </div>
+        <div>
+            <!-- Checkbox -->
+            <input type="checkbox" id="cNewsletter" name="tNewsletter" />
+            <label for="tNewsletter"> Gostaria de receber a Newsletter da Empresa </label>
+        </div>
+        <br>
+        <div>
+        
+            <!-- Button -->
+            <button type="submit"> Enviar Mensagem </button>
+
+        </div>
+</div>
+</section>
+</div>
+
+<!--Footer-->
+<footer id="rodape">
+    <p id="contato">
+        Nº 2 Beatriz Oliveira
+    </p>
+    <p id="endereco">
+        Rua do endereço, 123, Bairro
+        <br>
+        253 666 999
+    </p>
+
+    <p id="copyright">
+      Beatriz Oliveira  &copy; J+D UX/UI-0124. Todos os Direitos Reservados.
+    </p>
+</footer>
+</body>
+</html>
